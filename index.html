@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Get a Hundred</title>
+        <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+        <link rel="shortcut icon" href="./assets/images/ico.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">43</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">11</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">72</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="fa fa-sync-alt"></i>New game</button>
+            <button class="btn-roll"><i class="fa fa-dice"></i>Roll dice</button>
+            <button class="btn-hold"><i class="fa fa-plus"></i>Hold</button>
+            <button class="btn-rules" id="modal-rules"><i class="fa fa-info-circle"></i>RULES</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1>RULES</h1>
+                    <article>
+                        1. You must get a hundred first to be a winner <br><br>
+                        2. Dice number 1: your turn is over & no more accumulative score <br><br>
+                        3. If you're affraid of getting dice number 1, you can click 'HOLD' and your score will be accumulatived
+                    </article>
+                </div>
+            </div>
+
+            <img src="./assets/images/5.png" alt="Dice" class="dice" id="dice-1">
+        </div>
+        <script src="./assets/js/app.js"></script>
+        <script src="./assets/js/modal.js"></script>
+    </body>
+</html>
